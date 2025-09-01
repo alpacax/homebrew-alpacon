@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Ruby
+.ruby-version
+.bundle
+/vendor/bundle
+
+# Homebrew specific files
+# These are for files that might be created by homebrew commands
+/Library/Taps
+
+# Log files and temporary files
+*.log
+*.tmp
+
+# IDEs
+.idea/
+.vscode/
