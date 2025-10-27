@@ -5,20 +5,20 @@
 class AlpaconCli < Formula
   desc "Alpacon CLI"
   homepage "https://github.com/alpacax/alpacon-cli"
-  version "0.4.3"
+  version "0.4.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.3/alpacon-0.4.3-darwin-amd64.tar.gz"
-      sha256 "a0cc82ab24ae0045ec8a1c071103073a08abb21573f4882d688f3678e1f7258b"
+      url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.4/alpacon-0.4.4-darwin-amd64.tar.gz"
+      sha256 "e630016541a3059a3da6ffe17d6dccd8e32fd988030fcad45691b72366b09ce3"
 
       def install
         bin.install "alpacon"
       end
     end
     on_arm do
-      url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.3/alpacon-0.4.3-darwin-arm64.tar.gz"
-      sha256 "f2085ddb6551bfdf1e71fcdf95a698d47758db1821237e2afd4e5814ece3cc4e"
+      url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.4/alpacon-0.4.4-darwin-arm64.tar.gz"
+      sha256 "0fa572183662d7e9f1dff2f38da0c0f611767a9e5486429d064b1fa36d18c13a"
 
       def install
         bin.install "alpacon"
@@ -29,8 +29,8 @@ class AlpaconCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.3/alpacon-0.4.3-linux-amd64.tar.gz"
-        sha256 "5e2d1a7fd032a1eaa08c7a27bfed4c8c81172db5f4a67165347e7451343845e9"
+        url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.4/alpacon-0.4.4-linux-amd64.tar.gz"
+        sha256 "f0de4409c97382199c763c29fbcafc78d6b33777821bfc03aae6922aae333b2c"
 
         def install
           bin.install "alpacon"
@@ -39,8 +39,8 @@ class AlpaconCli < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.3/alpacon-0.4.3-linux-arm.tar.gz"
-        sha256 "a514838dbef1d7c6f37471c05b40bbd37b45a8c1f0cba9edb2b3297a2fd32b54"
+        url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.4/alpacon-0.4.4-linux-arm.tar.gz"
+        sha256 "3cc12ca7a4cea290a516fcdd7eef5fa9f550c6558815724ef3cdd67e53a8c23c"
 
         def install
           bin.install "alpacon"
@@ -49,8 +49,8 @@ class AlpaconCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.3/alpacon-0.4.3-linux-arm64.tar.gz"
-        sha256 "15e7cf70b51673102bc0a4be00825342b0ef465ba620f925313b12dd5f18f91a"
+        url "https://github.com/alpacax/alpacon-cli/releases/download/v0.4.4/alpacon-0.4.4-linux-arm64.tar.gz"
+        sha256 "8d3d81402fd306c506bfa244b910daddeb62a3f63f8597d2967d982f5d9c04f8"
 
         def install
           bin.install "alpacon"
