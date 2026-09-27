@@ -5,21 +5,21 @@
 class Alpamon < Formula
   desc "Secure server agent for Alpacon"
   homepage "https://github.com/alpacax/alpamon"
-  version "2.7.3"
+  version "2.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alpacax/alpamon/releases/download/v2.7.3/alpamon-2.7.3-darwin-amd64.tar.gz"
-      sha256 "571d76d795f5d0ebee86a60e0af3a0d72e3af8d928d048bce798a53ee90bf1b9"
+      url "https://github.com/alpacax/alpamon/releases/download/v2.8.0/alpamon-2.8.0-darwin-amd64.tar.gz"
+      sha256 "e255db34ec3b71595a8165cc44eb4b8811366a61d24e3439d2f1c2b3aaafb959"
 
       define_method(:install) do
         bin.install "alpamon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alpacax/alpamon/releases/download/v2.7.3/alpamon-2.7.3-darwin-arm64.tar.gz"
-      sha256 "c946c1a1cba2bdd15902d144232ed18b5afbf55f036da59e79c9d2f0b15e7383"
+      url "https://github.com/alpacax/alpamon/releases/download/v2.8.0/alpamon-2.8.0-darwin-arm64.tar.gz"
+      sha256 "4fa93819b82f6bd575223dce3cf441df2a72f6bbacda54231bde58f7d73c4af3"
 
       define_method(:install) do
         bin.install "alpamon"
@@ -29,15 +29,15 @@ class Alpamon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alpacax/alpamon/releases/download/v2.7.3/alpamon-2.7.3-linux-amd64.tar.gz"
-      sha256 "6297671da94078a2e3cf152e9003c1ff6080563024567a593ac0a813cb5f28b1"
+      url "https://github.com/alpacax/alpamon/releases/download/v2.8.0/alpamon-2.8.0-linux-amd64.tar.gz"
+      sha256 "9c3a47c7b39558c5b96878b6f132e49c93db5ba15409ff4109dd23d6a74d63dc"
       define_method(:install) do
         bin.install "alpamon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alpacax/alpamon/releases/download/v2.7.3/alpamon-2.7.3-linux-arm64.tar.gz"
-      sha256 "19f465d1b7f95230b1e7e34a256c5161cfafdd1ef092bb78e393bcc434206ad3"
+      url "https://github.com/alpacax/alpamon/releases/download/v2.8.0/alpamon-2.8.0-linux-arm64.tar.gz"
+      sha256 "10fec0a3b2dc929ec306dfdae88b3a65e1110606a748e6d6653bd9b8c8aac93d"
       define_method(:install) do
         bin.install "alpamon"
       end
