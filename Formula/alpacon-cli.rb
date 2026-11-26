@@ -5,12 +5,12 @@
 class AlpaconCli < Formula
   desc "Command-line client for Alpacon (Websh, exec, file transfer, tunnels)"
   homepage "https://github.com/alpacax/alpacon-cli"
-  version "1.20.1"
+  version "1.20.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.1/alpacon-1.20.1-darwin-amd64.tar.gz"
-      sha256 "396516acee90e20970b77a2b8c5f19229753498ae56084672996e1e817726fb9"
+      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.2/alpacon-1.20.2-darwin-amd64.tar.gz"
+      sha256 "5d4a9d79eb9b2ac7b3100c285052d64977bdf2ae4433cbbe6971816e516c6282"
 
       define_method(:install) do
         bin.install "alpacon"
@@ -18,8 +18,8 @@ class AlpaconCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.1/alpacon-1.20.1-darwin-arm64.tar.gz"
-      sha256 "04765c51f6b3e9b773d0202decf4b21c1cd9ac0156cf793bc279dc013684fcff"
+      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.2/alpacon-1.20.2-darwin-arm64.tar.gz"
+      sha256 "6eb742186b67f650641b1a45020801a9ac6d648e0ee1f5c7c2cb4c7ac6217871"
 
       define_method(:install) do
         bin.install "alpacon"
@@ -30,24 +30,24 @@ class AlpaconCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.1/alpacon-1.20.1-linux-amd64.tar.gz"
-      sha256 "bcaf6e5e8a75820b3697b5ffa4810d1bf4a586616700c3245843db7aa17f7714"
+      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.2/alpacon-1.20.2-linux-amd64.tar.gz"
+      sha256 "0246f280608c6ffa431456373b48299bd06870c65e4992d820983e74b7c9ff19"
       define_method(:install) do
         bin.install "alpacon"
         generate_completions_from_executable(bin/"alpacon", "completion")
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.1/alpacon-1.20.1-linux-arm.tar.gz"
-      sha256 "72cb23fd0c0047c05d811375152c898db3329d164352184f603d4d3d59289b20"
+      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.2/alpacon-1.20.2-linux-arm.tar.gz"
+      sha256 "aaaaa95fa9cdfd7e643eaa61def58f4d5dda6d1afeaf134f4a27ffa883c73241"
       define_method(:install) do
         bin.install "alpacon"
         generate_completions_from_executable(bin/"alpacon", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.1/alpacon-1.20.1-linux-arm64.tar.gz"
-      sha256 "bcb04c70a197b142c73d6c30b79b287afa421debe9e3873f2ce0eff62e83f4ca"
+      url "https://github.com/alpacax/alpacon-cli/releases/download/v1.20.2/alpacon-1.20.2-linux-arm64.tar.gz"
+      sha256 "b2ffaf9637073ae6bffb33145393e63c827e2030339a1be09ca36781193ee72d"
       define_method(:install) do
         bin.install "alpacon"
         generate_completions_from_executable(bin/"alpacon", "completion")
